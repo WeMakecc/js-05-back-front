@@ -1,0 +1,91 @@
+{
+  "extends": ["standard", "prettier", "prettier/standard"],
+  "plugins": ["import", "prettier", "standard", "promise"],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": {
+      "parcel": {
+        "rootDir": "src"
+      }
+    }
+  },
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": "warn",
+    "no-extra-semi": "warn",
+    "space-before-function-paren": 0,
+    "new-cap": "off",
+    "camelcase": "error",
+    "getter-return": "error",
+    "block-spacing": "warn",
+    "require-await": "warn",
+    "require-yield": "warn",
+    "promise/no-callback-in-promise": "warn",
+    "promise/no-return-wrap": "warn",
+    "promise/no-nesting": "error",
+    "no-use-before-define": [
+      "error",
+      { "functions": false, "classes": true, "variables": true }
+    ],
+    "import/no-unresolved": "error",
+    "callback-return": ["error", ["callback", "cb", "next", "done"]],
+    "handle-callback-err": "error",
+    "prefer-const": "warn",
+    "no-var": "warn",
+    "no-unused-expressions": "warn",
+    "no-unused-vars": "warn",
+    "no-async-promise-executor": "error",
+    "no-case-declarations": "error",
+    "no-class-assign": "error",
+    "no-compare-neg-zero": "error",
+    "no-cond-assign": "error",
+    "no-const-assign": "error",
+    "no-constant-condition": "error",
+    "no-control-regex": "error",
+    "no-dupe-args": "error",
+    "no-dupe-class-members": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-fallthrough": "error",
+    "no-func-assign": "error",
+    "no-global-assign": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-irregular-whitespace": "error",
+    "no-misleading-character-class": "error",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-new-symbol": "error",
+    "no-obj-calls": "error",
+    "no-octal": "error",
+    "no-prototype-builtins": "error",
+    "no-redeclare": "error",
+    "no-regex-spaces": "error",
+    "no-self-assign": "error",
+    "no-shadow": "error",
+    "no-invalid-this": "off",
+    "no-shadow-restricted-names": "error",
+    "no-sparse-arrays": "error",
+    "no-this-before-super": "error",
+    "no-undef": "error",
+    "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
+    "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
+    "no-unused-labels": "error",
+    "no-useless-catch": "error",
+    "no-useless-escape": "error",
+    "no-with": "error",
+    "require-atomic-updates": "error",
+    "use-isnan": "error",
+    "valid-typeof": "error",
+    "no-debugger": "off"
+  }
+}

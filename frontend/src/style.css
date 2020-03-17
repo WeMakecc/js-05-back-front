@@ -1,0 +1,13 @@
+html {
+  background-color: #fefefe;
+}
+
+body {
+  color: #454545;
+  margin: 0;
+}
+
+h1,
+p {
+  margin: 1rem 1rem;
+}
